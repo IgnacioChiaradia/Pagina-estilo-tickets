@@ -1,0 +1,617 @@
+body{
+/*	background-color:#CF6;*/
+	background-image:url(../img/diseno-patron-estilo-memphis_1156-891.jpg);
+	margin:0;	
+}
+
+img{
+/*	max-height:100%;*/
+	max-width:100%;		
+}
+
+#contenedor{
+	background-color:#0C0;
+	min-height:1000px;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+#encabezado{
+	background-color:#090;
+	height:120px;
+	width:100%;
+}
+
+#encabezado #logo{
+	display:block;
+/*	background-color:#FF0; */
+	background-image:url(../img/Logo%20entradas%20Nacho.png);
+	height:102px;
+	width:402px;
+	float:left;
+	margin-top:10px;
+	margin-left:40px;	
+	background-size:contain;	
+}
+
+#encabezado #mi-cuenta{
+	display:block;
+	float:right;
+	height:25px;
+	width:80px;
+	margin:75px 25px 10px 10px;
+	
+	background-color:#6F3;
+	color:#000;
+	font-size:17px;
+	text-decoration:none;
+	text-align:center;
+	line-height:25px;
+	
+	border:2px solid;	
+	border-radius:5px;
+}
+
+#encabezado #mi-cuenta:hover{
+	filter:hue-rotate(45deg);			
+}
+
+				/*------------------------------NAV------------------------------*/
+
+#nav{
+	background-color:#0C9;
+	height:50px;
+	width:100%;
+}
+
+#nav ul{
+	list-style:none;
+	margin:0 0 0 192px;
+	padding:0;	
+}
+
+#nav ul li{
+	float:left;		
+}
+
+#nav ul li a{
+	display:block;
+	width:140px;
+	height:20px;
+
+	background-color:#0C9;
+/*	background-color:#6FF;*/
+	text-decoration:none;
+	text-align:center;
+	line-height:20px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin:15px 40px 10px 40px;
+	border:2px solid;
+	border-radius:5px;			
+}
+
+#nav ul li a:hover{
+	background-color:#78FFD9;
+}
+
+#nav ul li a:active{
+	background-color:#D75BB8;
+	color:#009;
+	border-color:#009;	
+	
+}
+
+				/*------------------------------CUADROS DE ESPECTACULOS------------------------------*/
+ 
+#contenedor_cuadrados{
+	width:650px;
+	min-height:600px;
+	margin:20px 10px 20px 205px;
+	padding-left:5px;
+	
+/*	border:2px solid #0F0;*/
+	float:left;	
+}
+
+#contenedor_cuadrados ul{
+/*	list-style:none;	*/
+	margin:0;
+	padding:0;
+}
+
+#contenedor_cuadrados ul li{	
+/*	float:left;*/
+	list-style:none;
+}
+
+#contenedor_cuadrados ul li a{
+	display:block;
+	height:270px;
+	width:190px;
+	float:left;
+	
+/*	background-color:#06F;*/
+	border:3px solid #0F0;
+	text-decoration:none;
+	text-align:center;
+	margin:9px 9px;	
+/*	margin:12px 12px 100px 12px;*/
+	border-radius:5px;		
+}
+
+/*reemplace la los #cuadrado por la lista desordenada*/
+
+/*
+#cuadrado1{
+	background-color:#06F;
+	width:190px;
+	height:190px;
+	float:left;
+	margin:20px 10px 10px 20px;
+	border-radius:5px;	
+}
+
+#cuadrado2{
+	background-color:#06F;
+	width:190px;
+	height:190px;
+	float:left;
+	margin:20px 10px;
+	border-radius:5px;	
+}
+
+#cuadrado3{
+	background-color:#06F;
+	width:190px;
+	height:190px;
+	float:left;
+	margin:20px 10px;
+	border-radius:5px;	
+}
+
+
+#cuadrado4{
+	background-color:#06F;
+	width:190px;
+	height:190px;
+	float:left;
+	margin:0px 10px 10px 20px;
+	border-radius:5px;	
+}
+
+#cuadrado5{
+	background-color:#06F;
+	width:190px;
+	height:190px;
+	float:left;
+	margin:0px 10px 10px 10px;
+	border-radius:5px;	
+}
+
+#cuadrado6{
+	background-color:#06F;
+	width:190px;
+	height:190px;
+	float:left;
+	margin:0px 10px 10px 10px;
+	border-radius:5px;	
+}
+*/
+
+				/*------------------------------ LATERAL ------------------------------*/
+
+#lateral{
+	background-color:#090;
+	width:280px;
+	height:573px;
+	float:right;
+	margin:30px 170px 20px 0px;
+	border-radius:5px;		
+}
+
+#lateral .espectaculos{
+	list-style:none;
+	margin:0;
+	padding:0;
+			
+}
+
+/*modifica a espectaculos*/
+#lateral .espectaculos li a/*:first-child*/{
+	display:block;
+	height:25px;
+	width:220px;
+	background-color:#FC3;
+	margin-top:25px;
+	margin-left:20px;
+	padding-left:15px;
+	text-decoration:none;
+	line-height:25px;	
+	border-radius:5px;
+}
+
+#lateral .espectaculos li .menu{
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:block;
+	visibility:hidden;
+	opacity:0;
+	transition: visibility 0.5s, opacity 0.5s;		
+}
+
+
+#lateral .espectaculos li:hover .menu{
+	visibility:visible;
+	opacity:1;
+}
+
+
+#lateral .espectaculos li .menu li a{
+	display:block;
+	height:20px;
+	width:220px;
+	margin:45px 20px;
+	text-decoration:none;
+	line-height:20px;
+	border-left:6px solid red;
+	background-color:lightgrey;
+	border-radius:5px;
+	transition: background-color 0.3s;
+}
+
+#lateral .espectaculos li .menu li:hover a{
+	background-color:#FC3;
+}
+
+
+
+				/*------------------------------ PIE ------------------------------*/
+
+
+#pie{
+	background-color:#099;
+	width:100%;							
+	height:170px;
+	clear:both;	
+}
+
+#pie #nav-pie{
+	background-color:#EAAB2C;
+	height:40px;
+	width:600px;
+	margin-top:20px;
+	margin-left:352px;	
+}
+
+#pie #nav-pie ul{
+	list-style:none;
+	margin:0;
+	padding:0;	
+}
+
+#pie #nav-pie ul li{
+	float:left;	
+}
+
+#pie #nav-pie ul li a{
+	display:block;
+	width:150px;
+	height:40px;
+	
+	text-decoration:none;
+	border:2px solid #69F;
+	text-align:center;
+	line-height:35px;
+	box-sizing:border-box;
+}
+
+#pie #nav-pie ul li a:hover{
+	background-color:#FC0;
+	
+}
+
+#pie #derechos p{
+	margin-left:375px;
+	margin-top:100px;
+	font-size:18px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;		
+	
+}
+
+				/*------------------------------ QUIENES SOMOS ------------------------------*/
+#desc-quienes-somos{
+	width:950px;
+	min-height:573px;
+	margin:20px 25px 20px 207px; 
+	padding-top:30px;
+	background-color:#06C;
+	border-radius:5px;
+}
+
+#desc-quienes-somos #recuadro-quienes-somos{
+	width:600px;
+	min-height:500px;
+	border:3px solid #00FF00;
+	margin-left:152px;
+	padding-left:10px;
+	padding-right:10px;	
+}
+
+#desc-quienes-somos #recuadro-quienes-somos h3{
+	font-family:"Courier New", Courier, monospace;
+	font-size:24px;	
+}
+
+				/*------------------------------ MIS ENTRADAS ------------------------------*/
+#entradas{
+	width:950px;
+	min-height:573px;
+	margin:20px 25px 20px 200px;
+	background-color:#06C;
+	border-radius:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+#entradas h3{
+	font-family:"Courier New", Courier, monospace;
+	margin-left:15px;		
+}
+
+#entradas ul{
+	margin:0;
+	padding:0;
+}
+
+#entradas ul li{
+	list-style:none;
+	width:900px;
+	height:200px;
+	border:solid 1px #00FF00;
+	margin:10px 0px 10px 15px;
+	padding-left:5px;
+	padding-top:5px;
+	border-radius:5px;
+}
+
+#entradas ul li #imagen-mis-entradas{
+	height:100px;
+	width:124px;
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#entradas ul li p{
+	min-height:100px;
+	width:400px;
+	float:left;
+	margin-left:10px;	
+}
+
+				/*------------------------------ CONTACTANOS ------------------------------*/
+				
+#contenedor_formulario{
+	width:900px;
+	min-height:600px;
+	margin:20px 20px 20px 197px;
+	padding-left:5px;
+	
+	text-align:center;	
+	
+/*	border:2px solid #0F0;*/
+	float:left;		
+}
+
+				/*------------------------------ OBRAS ------------------------------*/
+				
+#contenedor_obra{
+	width:900px;
+	height:600px;
+	margin:20px 40px 20px 215px;
+	padding-left:5px;
+	padding-right:15px;
+	border-radius:10px;
+	
+	
+	background-color:#06F;	
+/*	border:2px solid #0F0;*/
+	float:left;
+			
+}
+
+/*este contenedor lo uso porque si el texto fuera mas largo al pasar la imagen las letras se van hacia la izquierda
+y no queda bien*/
+#contenedor_obra #descripcion{
+	margin-left:10px;	
+}	
+
+#contenedor_obra h3{
+	height:30px;
+	width:400px;
+	margin:6px 0px 0px 0px;
+	padding:0;	
+}
+
+#contenedor_obra #imagen-obra{
+	width:247px;
+	height:350px;
+	background-color:#06F;
+	margin:10px 20px 10px 10px;
+	border-radius:5px;
+	float:left;
+	text-align:center;
+}				
+
+#contenedor #comprar_entradas{
+	display:block;
+	float:left;
+	width:130px;
+	height:30px;
+	margin-top:15px;
+	margin-left:10px;
+	
+	background-color:#0CF;
+	color:black;
+	line-height:30px;
+	
+	text-align:center;
+	text-decoration:none;		
+	border:solid 2px #000;
+	border-radius:5px;
+	transition:filter 0.2s;
+}
+
+#contenedor #comprar_entradas:hover{
+	filter:hue-rotate(45deg);		
+}
+
+				/*------------------------------ OBRA JULIO CESAR ------------------------------*/
+
+#contenedor_obra #imagen-obra-cesar{
+	width:189px;
+	height:267px;
+	background-color:#06F;
+	margin:10px 20px 10px 10px;
+	border-radius:5px;
+	float:left;
+	text-align:center;
+}				
+
+
+				/*------------------------------ CATEGORIAS (LATERAL) ------------------------------*/
+				
+#contenedor #contenedor_cuadrados_categorias{
+	background-color:#06F;
+	width:650px;
+	min-height:600px;
+	margin:20px 150px;
+	padding-left:5px;
+	
+/*	border:2px solid #0F0;*/
+	border-radius:5px;
+	float:left;		
+}
+
+#contenedor #contenedor_cuadrados_categorias h3{
+	font-family:"Courier New", Courier, monospace;
+	font-size:24px;
+	margin-left:15px;
+	text-decoration:underline;
+	
+	margin-bottom:10px;
+	padding:0;
+}
+
+#contenedor #contenedor_cuadrados_categorias ul{
+/*	list-style:none;	*/
+	margin:0;
+	padding:0;
+}
+
+#contenedor #contenedor_cuadrados_categorias ul li{	
+/*	float:left;*/
+	list-style:none;
+}
+
+#contenedor #contenedor_cuadrados_categorias ul li a{
+	display:block;
+	height:270px;
+	width:190px;
+	float:left;
+	
+	background-color:#06F;
+	text-decoration:none;
+	text-align:center;
+/*	margin:12px 12px;	*/
+	margin:12px;
+	border:1px solid green;
+	border-radius:5px;		
+}
+
+				/*------------------------------ COMEDIA ------------------------------*/
+
+#contenedor #contenedor_cuadrados_categorias ul li .casting{
+	background-image:url(../img/portadas%20teatrales/Neurofibromatosis_ElCasting-1-peque%C3%B1a.jpg);
+  	background-color: #cccccc; 
+    background-size: 100%; 
+}
+
+#contenedor #contenedor_cuadrados_categorias ul li .dos-peor{
+	background-image:url(../img/portadas%20teatrales/Dos%20peor%20que%20uno.jpg);
+  	background-color: #cccccc; 
+    background-size: 100%; 
+}
+
+#contenedor #contenedor_cuadrados_categorias ul li .mi-sobrino{
+	background-image:url(../img/portadas%20teatrales/Mi%20sobrino%20el%20concejal.jpg);
+  	background-color: #cccccc; 
+    background-size: 100% 100%; 
+}
+
+				/*------------------------------ DRAMA ------------------------------*/
+
+#contenedor #contenedor_cuadrados_categorias ul li .julio{
+	background-image:url(../img/portadas%20teatrales/julio%20cesar.jpg);
+	background-color:#ccc;
+	background-size:contain;
+}
+
+#contenedor #contenedor_cuadrados_categorias ul li .el_fantasma{
+	background-image:url(../img/portadas%20teatrales/El%20fantasma%20de%20la%20opera.jpg);
+	background-color:#ccc;
+	background-size:contain;
+}
+
+				/*------------------------------ MUSICA ------------------------------*/
+				
+#contenedor #contenedor_cuadrados_categorias ul li .soniando_animales{
+	background-image:url(../img/portadas%20teatrales/So%C3%B1ando%20el%20carnaval%20de%20los%20animales.jpg);
+	background-color:#ccc;
+	background-size:contain;
+}
+
+#contenedor #contenedor_cuadrados_categorias ul li .tarzan{
+	background-image:url(../img/portadas%20teatrales/Tarzan%20el%20musical.jpg);
+	background-color:#ccc;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+
+#contenedor #contenedor_cuadrados_categorias ul li .pianista{
+	background-image:url(../img/portadas%20teatrales/El%20pianista%20del%20oceno.jpg);
+	background-color:#ccc;
+	background-size:contain;
+}
+
+#contenedor #contenedor_cuadrados_categorias ul li .pedro-lobo{
+	background-image:url(../img/portadas%20teatrales/Pedro%20y%20el%20lobo.jpg);
+	background-color:#ccc;
+	background-size:contain;
+}
+				
+				/*------------------------------ FILTROS CSS ------------------------------*/
+
+.brillo {
+	-webkit-filter: brightness(100%);
+	filter: brightness(100%);
+	transition:0.3s;
+}
+
+.brillo:hover {
+	-webkit-filter: brightness(130%);
+	filter: brightness(130%);
+}
+
+.brillo-tenue {
+	-webkit-filter: brightness(100%);
+	filter: brightness(100%);
+	transition:0.3s;
+}
+
+.brillo-tenue:hover {
+	-webkit-filter: brightness(115%);
+	filter: brightness(115%);
+}
